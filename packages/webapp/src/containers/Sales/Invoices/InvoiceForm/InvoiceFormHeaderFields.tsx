@@ -28,7 +28,7 @@ import {
 } from '@/components';
 import {
   momentFormatter,
-  tansformDateValue,
+  transformDateValue,
   inputIntent,
   handleDateChange,
 } from '@/utils';
@@ -198,7 +198,7 @@ export default function InvoiceFormHeaderFields() {
               >
                 <DateInput
                   {...momentFormatter('YYYY/MM/DD')}
-                  value={tansformDateValue(value)}
+                  value={transformDateValue(value)}
                   onChange={handleDateChange((formattedDate) => {
                     form.setFieldValue('invoice_date', formattedDate);
                   })}
@@ -226,7 +226,7 @@ export default function InvoiceFormHeaderFields() {
               >
                 <DateInput
                   {...momentFormatter('YYYY/MM/DD')}
-                  value={tansformDateValue(value)}
+                  value={transformDateValue(value)}
                   onChange={handleDateChange((formattedDate) => {
                     form.setFieldValue('due_date', formattedDate);
                   })}

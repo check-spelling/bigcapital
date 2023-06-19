@@ -9,7 +9,7 @@ import {
 import { DateInput } from '@blueprintjs/datetime';
 import { FastField, Field, ErrorMessage } from 'formik';
 import { FFormGroup, FormattedMessage as T } from '@/components';
-import { momentFormatter, compose, tansformDateValue } from '@/utils';
+import { momentFormatter, compose, transformDateValue } from '@/utils';
 import classNames from 'classnames';
 
 import { CLASSES } from '@/constants/classes';
@@ -79,7 +79,7 @@ function WarehouseTransferFormHeaderFields({
           >
             <DateInput
               {...momentFormatter('YYYY/MM/DD')}
-              value={tansformDateValue(value)}
+              value={transformDateValue(value)}
               onChange={handleDateChange((formattedDate) => {
                 form.setFieldValue('date', formattedDate);
               })}

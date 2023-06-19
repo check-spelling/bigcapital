@@ -21,7 +21,7 @@ import { CLASSES } from '@/constants/classes';
 import {
   safeSumBy,
   momentFormatter,
-  tansformDateValue,
+  transformDateValue,
   handleDateChange,
   inputIntent,
 } from '@/utils';
@@ -234,7 +234,7 @@ export default function PaymentReceiveHeaderFields() {
           >
             <DateInput
               {...momentFormatter('YYYY/MM/DD')}
-              value={tansformDateValue(value)}
+              value={transformDateValue(value)}
               onChange={handleDateChange((formattedDate) => {
                 form.setFieldValue('payment_date', formattedDate);
               })}
