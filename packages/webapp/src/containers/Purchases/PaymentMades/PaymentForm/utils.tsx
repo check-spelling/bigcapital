@@ -70,7 +70,7 @@ export const transformToNewPageEntries = (entries) => {
 };
 
 /**
- * Detarmines vendors fast field when update.
+ * Determines vendors fast field when update.
  */
 export const vendorsFieldShouldUpdate = (newProps, oldProps) => {
   return (
@@ -80,7 +80,7 @@ export const vendorsFieldShouldUpdate = (newProps, oldProps) => {
 };
 
 /**
- * Detarmines accounts fast field when update.
+ * Determines accounts fast field when update.
  */
 export const accountsFieldShouldUpdate = (newProps, oldProps) => {
   return (
@@ -167,7 +167,7 @@ export const usePaymentMadeTotals = () => {
 };
 
 /**
- * Detarmines whether the bill has foreign customer.
+ * Determines whether the bill has foreign customer.
  * @returns {boolean}
  */
 export const usePaymentMadeIsForeignCustomer = () => {
