@@ -15,7 +15,7 @@ import withPaymentMadeActions from './withPaymentMadeActions';
 import { compose, transformTableStateToQuery } from '@/utils';
 
 /**
- * Payment mades list.
+ * Payments made list.
  */
 function PaymentMadeList({
   // #withPaymentMades

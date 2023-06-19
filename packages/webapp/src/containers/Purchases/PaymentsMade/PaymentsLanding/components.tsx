@@ -57,7 +57,7 @@ export function ActionsMenu({
 }
 
 /**
- * Payment mades table actions cell.
+ * Payments made table actions cell.
  */
 export function ActionsCell(props) {
   return (
@@ -71,7 +71,7 @@ export function ActionsCell(props) {
 }
 
 /**
- * Retrieve payment mades table columns.
+ * Retrieve payments made table columns.
  */
 export function usePaymentMadesTableColumns() {
   return React.useMemo(

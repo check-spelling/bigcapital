@@ -59,7 +59,7 @@ function PaymentMadesListProvider({ query, tableStateChanged, ...props }) {
   return (
     <DashboardInsider
       loading={isViewsLoading || isResourceMetaLoading}
-      name={'payment-mades-list'}
+      name={'payments-made-list'}
     >
       <PaymentMadesListContext.Provider value={provider} {...props} />
     </DashboardInsider>

@@ -26,7 +26,7 @@ const CONFIG = {
 };
 
 const reducerInstance = createReducer(initialState, {
-  ...createTableStateReducers('PAYMENT_MADES', defaultTableQuery),
+  ...createTableStateReducers('PAYMENTS_MADE', defaultTableQuery),
 
   [t.RESET]: () => {
     purgeStoredState(CONFIG);

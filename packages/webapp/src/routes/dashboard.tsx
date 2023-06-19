@@ -961,7 +961,7 @@ export const getDashboardRoutes = () => [
   },
   // Payment modes.
   {
-    path: `/payment-mades/:id/edit`,
+    path: `/payments-made/:id/edit`,
     component: lazy(
       () =>
         import(
@@ -977,7 +977,7 @@ export const getDashboardRoutes = () => [
     subscriptionActive: [SUBSCRIPTION_TYPE.MAIN],
   },
   {
-    path: `/payment-mades/new`,
+    path: `/payments-made/new`,
     component: lazy(
       () =>
         import(
@@ -993,7 +993,7 @@ export const getDashboardRoutes = () => [
     subscriptionActive: [SUBSCRIPTION_TYPE.MAIN],
   },
   {
-    path: `/payment-mades`,
+    path: `/payments-made`,
     component: lazy(
       () =>
         import(
