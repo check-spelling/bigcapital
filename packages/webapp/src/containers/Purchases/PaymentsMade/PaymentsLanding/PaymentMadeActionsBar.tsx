@@ -60,7 +60,7 @@ function PaymentMadeActionsBar({
 
   // Handle new payment made button click.
   const handleClickNewPaymentMade = () => {
-    history.push('/payment-mades/new');
+    history.push('/payments-made/new');
   };
 
   // Handle tab changing.

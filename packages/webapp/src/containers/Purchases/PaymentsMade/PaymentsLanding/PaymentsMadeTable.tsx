@@ -44,10 +44,10 @@ function PaymentMadesTable({
   // #withSettings
   paymentMadesTableSize,
 }) {
-  // Payment mades table columns.
+  // Payments made table columns.
   const columns = usePaymentMadesTableColumns();
 
-  // Payment mades list context.
+  // Payments made list context.
   const {
     paymentMades,
     pagination,
@@ -61,7 +61,7 @@ function PaymentMadesTable({
 
   // Handles the edit payment made action.
   const handleEditPaymentMade = (paymentMade) => {
-    history.push(`/payment-mades/${paymentMade.id}/edit`);
+    history.push(`/payments-made/${paymentMade.id}/edit`);
   };
 
   // Handles the delete payment made action.
@@ -83,7 +83,7 @@ function PaymentMadesTable({
 
   // Local storage memorizing columns widths.
   const [initialColumnsWidths, , handleColumnResizing] =
-    useMemorizedColumnsWidths(TABLES.PAYMENT_MADES);
+    useMemorizedColumnsWidths(TABLES.PAYMENTS_MADE);
 
   // Handle datatable fetch data once the table state change.
   const handleDataTableFetchData = useCallback(
