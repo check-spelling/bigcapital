@@ -221,7 +221,7 @@ export const useSetPrimaryWarehouseToForm = () => {
 };
 
 /**
- * Retreives the bill totals.
+ * Retrieves the bill totals.
  */
 export const useBillTotals = () => {
   const {
@@ -244,7 +244,7 @@ export const useBillTotals = () => {
   // Retrieves the payment total.
   const paymentTotal = React.useMemo(() => 0, []);
 
-  // Retireves the formatted payment total.
+  // Retrieves the formatted payment total.
   const formattedPaymentTotal = React.useMemo(
     () => formattedAmount(paymentTotal, currencyCode),
     [paymentTotal, currencyCode],
