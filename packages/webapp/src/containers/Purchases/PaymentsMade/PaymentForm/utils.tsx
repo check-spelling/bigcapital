@@ -90,7 +90,7 @@ export const accountsFieldShouldUpdate = (newProps, oldProps) => {
 };
 
 /**
- * Transformes the form values to request body.
+ * Transforms the form values to request body.
  */
 export const transformFormToRequest = (form) => {
   // Filters entries that have no `bill_id` or `payment_amount`.
@@ -119,7 +119,7 @@ export const useSetPrimaryBranchToForm = () => {
 };
 
 /**
- * Transformes the response errors types.
+ * Transforms the response errors types.
  */
 export const transformErrors = (errors, { setFieldError }) => {
   const getError = (errorType) => errors.find((e) => e.type === errorType);
