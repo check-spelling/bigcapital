@@ -16,7 +16,7 @@ import {
   momentFormatter,
   inputIntent,
   handleDateChange,
-  tansformDateValue,
+  transformDateValue,
 } from '@/utils';
 import {
   Hint,
@@ -139,7 +139,7 @@ export default function MakeJournalEntriesHeader({}) {
               onChange={handleDateChange((formattedDate) => {
                 form.setFieldValue('date', formattedDate);
               })}
-              value={tansformDateValue(value)}
+              value={transformDateValue(value)}
               popoverProps={{
                 position: Position.BOTTOM,
                 minimal: true,

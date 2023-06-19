@@ -31,7 +31,7 @@ import withDialogActions from '@/containers/Dialog/withDialogActions';
 import { CreditNoteExchangeRateInputField } from './components';
 import {
   momentFormatter,
-  tansformDateValue,
+  transformDateValue,
   inputIntent,
   handleDateChange,
 } from '@/utils';
@@ -183,7 +183,7 @@ export default function CreditNoteFormHeaderFields({}) {
           >
             <DateInput
               {...momentFormatter('YYYY/MM/DD')}
-              value={tansformDateValue(value)}
+              value={transformDateValue(value)}
               onChange={handleDateChange((formattedDate) => {
                 form.setFieldValue('credit_note_date', formattedDate);
               })}

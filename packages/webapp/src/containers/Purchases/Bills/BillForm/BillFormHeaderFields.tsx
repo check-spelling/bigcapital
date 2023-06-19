@@ -27,7 +27,7 @@ import withDialogActions from '@/containers/Dialog/withDialogActions';
 import {
   momentFormatter,
   compose,
-  tansformDateValue,
+  transformDateValue,
   handleDateChange,
   inputIntent,
 } from '@/utils';
@@ -100,7 +100,7 @@ function BillFormHeader() {
           >
             <DateInput
               {...momentFormatter('YYYY/MM/DD')}
-              value={tansformDateValue(value)}
+              value={transformDateValue(value)}
               onChange={handleDateChange((formattedDate) => {
                 form.setFieldValue('bill_date', formattedDate);
               })}
@@ -127,7 +127,7 @@ function BillFormHeader() {
           >
             <DateInput
               {...momentFormatter('YYYY/MM/DD')}
-              value={tansformDateValue(value)}
+              value={transformDateValue(value)}
               onChange={handleDateChange((formattedDate) => {
                 form.setFieldValue('due_date', formattedDate);
               })}
