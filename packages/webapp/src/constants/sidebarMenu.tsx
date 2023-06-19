@@ -432,16 +432,16 @@ export const SidebarMenu = [
   // # Cashflow
   // ---------------
   {
-    text: <T id={'siebar.cashflow'} />,
+    text: <T id={'sidebar.cashflow'} />,
     type: ISidebarMenuItemType.Overlay,
     overlayId: ISidebarMenuOverlayIds.Cashflow,
     children: [
       {
-        text: <T id={'siebar.cashflow'} />,
+        text: <T id={'sidebar.cashflow'} />,
         type: ISidebarMenuItemType.Group,
         children: [
           {
-            text: <T id={'siebar.cashflow.label_cash_and_bank_accounts'} />,
+            text: <T id={'sidebar.cashflow.label_cash_and_bank_accounts'} />,
             href: '/cashflow-accounts',
             type: ISidebarMenuItemType.Link,
             permission: {
