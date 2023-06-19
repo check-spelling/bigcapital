@@ -138,7 +138,7 @@ module.exports = {
   },
 
   /**
-   * Users registeration configuration.
+   * Users registration configuration.
    */
   registration: {
     countries: {
