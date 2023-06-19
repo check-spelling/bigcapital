@@ -13,7 +13,7 @@ export function MakeJournalFormFooterLeft() {
       >
         <FEditableText
           name={'description'}
-          placeholder={<T id={'make_jorunal.description.placeholder'} />}
+          placeholder={<T id={'make_journal.description.placeholder'} />}
         />
       </DescriptionFormGroup>
     </React.Fragment>
